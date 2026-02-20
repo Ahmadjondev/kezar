@@ -1,0 +1,2 @@
+you should reduce api counts because i guess for landing page, it enough only a api because we can get all data with a api for landing page, and other pages is similar to it and improve admin apis.
+remove Division and CoreValue and
