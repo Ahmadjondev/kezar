@@ -27,12 +27,31 @@ async def _seed_settings(db: AsyncSession) -> None:
         ("hero_video_id", "Q5vLHyS-EHY", "hero"),
 
         # ── Intro / KezarIntro section ─────────────────────────
-        ("intro_title_uz", "Kezar Teks MChJ", "intro"),
-        ("intro_title_ru", "Kezar Teks ООО", "intro"),
-        ("intro_title_en", "Kezar Teks LLC", "intro"),
-        ("intro_text_uz", "Kezar Teks MChJ — bu vertikal integratsiyalangan to'qimachilik kompaniyasi bo'lib, trикотаж matosini to'qish, bo'yash, gul bosish va tayyor trикотаж mahsulotlari ishlab chiqarish bilan shug'ullanadi.", "intro"),
-        ("intro_text_ru", "Kezar Teks ООО — вертикально интегрированная текстильная компания, занимающаяся вязанием, крашением, печатью и производством готовой трикотажной продукции.", "intro"),
-        ("intro_text_en", "Kezar Teks LLC is a vertically integrated textile company specializing in knitting, dyeing, printing, and manufacturing finished knitwear products.", "intro"),
+        ("intro_title_uz", "KEZAR TEKS MChJ", "intro"),
+        ("intro_title_ru", "KEZAR TEKS ООО", "intro"),
+        ("intro_title_en", "KEZAR TEKS LLC", "intro"),
+        (
+            "intro_text_uz",
+            "KEZAR TEKS MChJ — 1998 yildan faoliyat yurituvchi vertikаl integratsiyalangan "
+            "to'qimachilik kompaniyasi. Biz trikotaj matosini to'qish, bo'yash, gul bosish va "
+            "tayyor trikotaj mahsulotlari ishlab chiqarish bilan shug'ullanamiz. "
+            "Andijоn viloyatida joylashgan bo'lib, 505 nafar xodim bilan faoliyat yuritamiz.",
+            "intro",
+        ),
+        (
+            "intro_text_ru",
+            "KEZAR TEKS ООО — вертикально интегрированная текстильная компания, работающая с 1998 года. "
+            "Мы занимаемся вязанием трикотажного полотна, крашением, печатью и производством "
+            "готовой трикотажной продукции. Расположены в Андижанской области и работаем с командой из 505 человек.",
+            "intro",
+        ),
+        (
+            "intro_text_en",
+            "KEZAR TEKS LLC is a vertically integrated textile company operating since 1998. "
+            "We specialize in knitting, dyeing, printing, and manufacturing finished knitwear products. "
+            "Located in the Andijan region with a team of 505 employees.",
+            "intro",
+        ),
         (
             "intro_image",
             "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80",
@@ -59,30 +78,79 @@ async def _seed_settings(db: AsyncSession) -> None:
         ("showcase_text_en", "A blend of modern technology and traditional craftsmanship", "showcase"),
 
         # ── Footer / Contact ───────────────────────────────────
-        ("contact_email", "info@kezarteks.uz", "footer"),
-        ("contact_website", "www.kezarteks.uz", "footer"),
-        ("contact_phone", "+998 71 123 45 67", "footer"),
-        ("contact_address_uz", "Toshkent viloyati, Zangiota tumani", "footer"),
-        ("contact_address_ru", "Ташкентская область, Зангиатинский район", "footer"),
-        ("contact_address_en", "Tashkent region, Zangiota district", "footer"),
+        ("contact_email", "kezar@list.ru", "footer"),
+        ("contact_website", "www.kezar.uz", "footer"),
+        ("contact_phone", "+998 74 223 00 00", "footer"),
+        ("contact_address_uz", "Andijоn viloyati, Oltinkul tumani, Sadda KFY, Gulbahor ko'chasi, 35-uy", "footer"),
+        ("contact_address_ru", "Андижанская область, Алтынкульский район, МКК Садда, ул. Гулбахор, д. 35", "footer"),
+        ("contact_address_en", "Andijan region, Oltinkul district, Sadda MKK, Gulbahor street, 35", "footer"),
 
-        # ── About page ────────────────────────────────────────
+        # ── About page — official company passport data ────────
         ("about_company_name", "KEZAR TEKS MChJ", "about"),
-        ("about_stir", "123456789", "about"),
-        ("about_okonx", "17211", "about"),
-        ("about_oked", "13913", "about"),
-        ("about_mfo", "00000", "about"),
-        ("about_inn", "123456789", "about"),
-        ("about_bank", "JSCB Kapitalbank", "about"),
-        ("about_director", "Director Name", "about"),
-        ("about_registration_number", "123456", "about"),
-        ("about_address_uz", "Toshkent viloyati, Zangiota tumani, Kezar MFY", "about"),
-        ("about_address_ru", "Ташкентская область, Зангиатинский район, Кезар МФЙ", "about"),
-        ("about_address_en", "Tashkent region, Zangiota district, Kezar MFY", "about"),
-        ("about_description_uz", "Kezar Teks MChJ — O'zbekistonning yetakchi to'qimachilik kompaniyasi", "about"),
-        ("about_description_ru", "Kezar Teks ООО — ведущая текстильная компания Узбекистана", "about"),
-        ("about_description_en", "Kezar Teks LLC — a leading textile company of Uzbekistan", "about"),
-        ("about_export_countries", "USA,Germany,Turkey,Poland,Latvia,Russia,Canada,UK,France,Italy,Spain,Netherlands", "about"),
+        ("about_stir", "203032009", "about"),
+        ("about_okonx", "17151", "about"),
+        ("about_oked", "14390", "about"),
+        ("about_mfo", "", "about"),
+        ("about_inn", "203032009", "about"),
+        ("about_bank", "", "about"),
+        ("about_director", "Sotvoldiyev Karamatiillo Rakhmatillo o'g'li", "about"),
+        ("about_accountant", "Abdusalomov Baxromjon Baxtiyar o'g'li", "about"),
+        ("about_registration_number", "", "about"),
+        ("about_founded_year", "1998", "about"),
+        ("about_reregistered_year", "2006", "about"),
+        ("about_charter_capital", "5 400 000 000 so'm", "about"),
+        ("about_founders", "Xaydarov Xojiakbar, Xaydarov Muhammadxolid", "about"),
+        ("about_land_area", "1,74 ga", "about"),
+        ("about_employees_total", "505", "about"),
+        ("about_employees_management", "12", "about"),
+        ("about_employees_production", "493", "about"),
+        (
+            "about_raw_materials",
+            "Ip kalava (gazlama), import xom ashyo, mahalliy xom ashyo",
+            "about",
+        ),
+        ("about_capacity_fabric", "5 000 tonna/yil", "about"),
+        ("about_capacity_garment", "5 000 000 dona/yil", "about"),
+        (
+            "about_activity_uz",
+            "Trikotaj matosini to'qish, bo'yash, gul bosish va tayyor trikotaj mahsulotlari ishlab chiqarish",
+            "about",
+        ),
+        (
+            "about_activity_ru",
+            "Вязание трикотажного полотна, крашение, нанесение рисунков и производство готовых трикотажных изделий",
+            "about",
+        ),
+        (
+            "about_activity_en",
+            "Knitting fabric, dyeing, printing, and manufacturing of finished knitwear products",
+            "about",
+        ),
+        ("about_address_uz", "Andijоn viloyati, Oltinkul tumani, Sadda KFY, Gulbahor ko'chasi, 35-uy", "about"),
+        ("about_address_ru", "Андижанская область, Алтынкульский район, МКК Садда, ул. Гулбахор, д. 35", "about"),
+        ("about_address_en", "Andijan region, Oltinkul district, Sadda MKK, Gulbahor street, 35", "about"),
+        (
+            "about_description_uz",
+            "KEZAR TEKS MChJ — 1998 yildan faoliyat yuritib kelayotgan O'zbekistonning yetakchi "
+            "trikotaj mahsulotlari ishlab chiqaruvchisi. Andijоn viloyatida 1,74 gektarlik maydonda "
+            "joylashgan korxona yiliga 5 000 tonna mato va 5 million dona tayyor mahsulot ishlab chiqaradi.",
+            "about",
+        ),
+        (
+            "about_description_ru",
+            "KEZAR TEKS ООО — ведущий производитель трикотажной продукции Узбекистана, работающий с 1998 года. "
+            "Предприятие расположено на площади 1,74 га в Андижанской области и производит "
+            "5 000 тонн ткани и 5 миллионов единиц готовой продукции в год.",
+            "about",
+        ),
+        (
+            "about_description_en",
+            "KEZAR TEKS LLC is a leading knitwear manufacturer in Uzbekistan, operating since 1998. "
+            "Located on 1.74 hectares in the Andijan region, the company produces "
+            "5,000 tons of fabric and 5 million garments per year.",
+            "about",
+        ),
+        ("about_export_countries", "Russia,Azerbaijan,Kyrgyzstan,Kazakhstan,Ukraine,Moldova", "about"),
     ]
     for key, value, group in settings_data:
         existing = await db.execute(
