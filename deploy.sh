@@ -43,6 +43,7 @@ EOF
 fi
 
 mkdir -p uploads
+pm2 start ./.venv/bin/uvicorn --name "kezar-backend" --interpreter none -- main:app --host 0.0.0.0 --port 8012
 echo "  ✓ Backend ready"
 
 # ── 2. Frontend ─────────────────────────────
@@ -57,14 +58,15 @@ echo "  Building Next.js..."
 NEXT_PUBLIC_API_URL="https://kezar.soften.uz" pnpm build
 echo "  ✓ Frontend ready"
 
+
 # ── 3. PM2 ──────────────────────────────────
 echo ""
 echo "▶ Starting services with PM2..."
 cd "$PROJECT_DIR"
 
-pm2 delete ecosystem.config.js 2>/dev/null || true
-pm2 start ecosystem.config.js
+pm2 start "pnpm start" --name kezar-frontend
 pm2 save
+pm2 startup
 
 # ── 4. Nginx + SSL ──────────────────────────
 echo ""
