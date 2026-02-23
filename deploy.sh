@@ -6,7 +6,7 @@ set -euo pipefail
 # Usage:  bash deploy.sh
 #─────────────────────────────────────────────
 
-PROJECT_DIR="/home/inventory/kezar"
+PROJECT_DIR="/home/insoft/kezar"
 
 echo "══════════════════════════════════════════"
 echo "  Kezar Teks — Deploy"

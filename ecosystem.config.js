@@ -2,8 +2,8 @@ module.exports = {
     apps: [
         // {
         //     name: "kezar-backend",
-        //     cwd: "/home/inventory/kezar/backend",
-        //     interpreter: "/home/inventory/kezar/backend/.venv/bin/python",
+        //     cwd: "/home/insoft/kezar/backend",
+        //     interpreter: "/home/insoft/kezar/backend/.venv/bin/python",
         //     script: "-m",
         //     args: "uvicorn app.main:app --host 127.0.0.1 --port 8012",
         //     env: {
@@ -16,7 +16,7 @@ module.exports = {
         // },
         {
             name: "kezar-frontend",
-            cwd: "/home/inventory/kezar/frontend",
+            cwd: "/home/insoft/kezar/frontend",
             script: "node_modules/.bin/next",
             args: "start -p 3004",
             env: {
