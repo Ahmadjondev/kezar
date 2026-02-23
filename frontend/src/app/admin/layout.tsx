@@ -142,8 +142,8 @@ export default function AdminLayout({
                 {/* Sidebar header */}
                 <div className="h-16 flex items-center justify-between px-5 border-b border-white/6">
                     <Link href="/admin" className="flex items-center gap-3" onClick={() => setSidebarOpen(false)}>
-                        <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-primary/20">
-                            <span className="text-white font-extrabold text-sm tracking-tight">KT</span>
+                        <div className="w-9 h-9 rounded-lg flex items-center justify-center overflow-hidden">
+                            <img src="/images/logo-transparent.png" alt="Kezar Teks" className="w-full h-full object-contain" />
                         </div>
                         <div>
                             <span className="font-semibold text-white text-[15px] leading-tight block">Kezar Teks</span>

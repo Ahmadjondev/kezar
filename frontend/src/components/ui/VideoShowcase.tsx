@@ -71,7 +71,7 @@ export default function VideoShowcase({ settings }: { settings: SiteSetting }) {
                     {/* Play button */}
                     <button
                         onClick={openDialog}
-                        className="group mb-8 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary flex items-center justify-center shadow-[0_0_0_0_rgba(74,140,63,0.4)] hover:shadow-[0_0_0_12px_rgba(74,140,63,0.15)] transition-all duration-500 hover:scale-110"
+                        className="group mb-8 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary flex items-center justify-center shadow-[0_0_0_0_rgba(0,72,129,0.4)] hover:shadow-[0_0_0_12px_rgba(0,72,129,0.15)] transition-all duration-500 hover:scale-110"
                         aria-label="Play infrastructure video"
                     >
                         <svg

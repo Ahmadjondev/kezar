@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 import type { NewsArticle, SiteSetting } from "@/lib/api";
 
@@ -76,7 +77,7 @@ export default function News({ articles, settings }: { articles: NewsArticle[]; 
                     <div
                         className="absolute inset-0 opacity-[0.06]"
                         style={{
-                            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a8c3f' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23004881' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                         }}
                     />
                     <div className="absolute inset-0 bg-linear-to-br from-primary/10 via-transparent to-transparent" />
@@ -152,9 +153,9 @@ export default function News({ articles, settings }: { articles: NewsArticle[]; 
                                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                                         {excerpt(featured)}
                                     </p>
-                                    <button className="self-start px-6 py-2.5 rounded-xl bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-colors duration-300">
+                                    <Link href={`/news/${featured.id}`} className="self-start px-6 py-2.5 rounded-xl bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-colors duration-300">
                                         {t.news.readMore} →
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -193,9 +194,9 @@ export default function News({ articles, settings }: { articles: NewsArticle[]; 
                                         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-3 mb-4">
                                             {excerpt(article)}
                                         </p>
-                                        <button className="text-sm text-primary font-medium hover:underline transition-all">
+                                        <Link href={`/news/${article.id}`} className="text-sm text-primary font-medium hover:underline transition-all">
                                             {t.news.readMore} →
-                                        </button>
+                                        </Link>
                                     </div>
                                 </article>
                             ))}

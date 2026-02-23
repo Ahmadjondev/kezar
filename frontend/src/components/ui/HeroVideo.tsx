@@ -97,9 +97,7 @@ export default function HeroVideo({ videoId = "Q5vLHyS-EHY" }: { videoId?: strin
             >
                 <div className="flex items-center justify-center h-full">
                     <div className="animate-pulse flex flex-col items-center gap-3">
-                        <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center">
-                            <span className="text-white/40 font-black text-xl">KT</span>
-                        </div>
+                        <img src="/images/logo-transparent.png" alt="Kezar Teks" className="w-14 h-14 object-contain" />
                         <div className="w-8 h-0.5 bg-white/20 rounded-full" />
                     </div>
                 </div>

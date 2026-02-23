@@ -109,7 +109,7 @@ export default function Statistics({ statistics }: { statistics: Statistic[] }) 
             ref={sectionRef}
             className="relative w-full py-16 md:py-32 bg-white dark:bg-gray-950 overflow-hidden transition-colors duration-500"
         >
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(74,140,63,0.04),transparent_60%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,72,129,0.04),transparent_60%)]" />
 
             <div className="relative mx-auto max-w-6xl px-8 md:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10">

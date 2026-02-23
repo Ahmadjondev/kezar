@@ -84,6 +84,9 @@ export const translations = {
       company: "Kompaniya",
       export: "Eksport",
       sustainability: "Barqarorlik",
+      backToNews: "Yangiliklarга qaytish",
+      shareArticle: "Ulashish",
+      relatedNews: "O'xshash yangiliklar",
     },
     factories: {
       heroTitle: "FABRIKALAR",
@@ -235,6 +238,9 @@ export const translations = {
       company: "Компания",
       export: "Экспорт",
       sustainability: "Устойчивость",
+      backToNews: "Вернуться к новостям",
+      shareArticle: "Поделиться",
+      relatedNews: "Похожие новости",
     },
     factories: {
       heroTitle: "ФАБРИКИ",
@@ -386,6 +392,9 @@ export const translations = {
       company: "Company",
       export: "Export",
       sustainability: "Sustainability",
+      backToNews: "Back to News",
+      shareArticle: "Share",
+      relatedNews: "Related News",
     },
     factories: {
       heroTitle: "FACTORIES",

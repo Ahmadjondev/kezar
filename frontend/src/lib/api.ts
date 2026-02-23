@@ -130,6 +130,9 @@ export const fetchGallery = (category?: string) =>
 export const fetchNews = (category?: string) =>
   apiFetch<NewsPage>(`/api/page/news${category ? `?category=${category}` : ""}`);
 
+export const fetchNewsArticle = (id: number) =>
+  apiFetch<NewsArticle>(`/api/page/news/${id}`);
+
 export const fetchAboutPage = () =>
   apiFetch<AboutPage>("/api/page/about");
 

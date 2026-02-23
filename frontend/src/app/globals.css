@@ -3,10 +3,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-primary: #4a8c3f;
-  --color-primary-dark: #3a7032;
+  --font-sans: var(--font-avenir);
+  --font-mono: var(--font-avenir);
+  --color-primary: #004881;
+  --color-primary-dark: #003562;
+  --color-secondary: #B17F45;
+  --color-third: #E5BA87;
 }
 
 * {

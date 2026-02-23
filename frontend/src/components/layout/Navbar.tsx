@@ -124,7 +124,7 @@ export default function Navbar() {
                     {/* Sliding active indicator pill */}
                     <li
                         aria-hidden
-                        className={`absolute top-0 rounded-2xl transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] pointer-events-none ${scrolled ? "bg-primary/15 shadow-[0_0_12px_rgba(74,140,63,0.15)]"
+                        className={`absolute top-0 rounded-2xl transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] pointer-events-none ${scrolled ? "bg-primary/15 shadow-[0_0_12px_rgba(0,72,129,0.15)]"
                             : "bg-white/20 shadow-[0_0_12px_rgba(255,255,255,0.1)]"
                             }`}
                         style={pillStyle}
